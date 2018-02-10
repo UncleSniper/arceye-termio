@@ -1,0 +1,16 @@
+plugins {
+	id 'java-library'
+}
+
+description 'ArcEye TermIO'
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+compileJava.options.bootClasspath = java7RTPath
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+	api files(arceyeDependBase + 'utils' + arceyeDependPath + 'org.unclesniper.arceye.utils.jar')
+}
